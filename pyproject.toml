@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mealmentor"
+version = "0.1.0"
+description = "Step into a world where nutritious meals are at your fingertips! This project tailors weekly menus specifically to your health parameters and eating habits, taking the stress out of meal planning."
+authors = ["Bohdan Solianyk <bohdan_solianyk@epam.com>"]
+license = "GNU GENERAL PUBLIC LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
