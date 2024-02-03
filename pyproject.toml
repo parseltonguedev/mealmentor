@@ -11,6 +11,7 @@ python = "^3.12"
 fastapi = "^0.109.0"
 uvicorn = "^0.27.0"
 sqlalchemy = "^2.0.25"
+fastapi-users = "^12.1.2"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -19,6 +20,7 @@ isort = "^5.13.2"
 mypy = "^1.8.0"
 pylint = "^3.0.3"
 pre-commit = "^3.6.0"
+faker = "^22.6.0"
 
 [build-system]
 requires = ["poetry-core"]
