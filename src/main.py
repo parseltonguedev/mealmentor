@@ -3,8 +3,8 @@ from typing import Union
 from fastapi import Depends, FastAPI
 from sqlalchemy.orm import Session
 
-from database import Base, SessionLocal, engine
-from models import UserTable
+from db.mealmentor_database import SessionLocal, engine
+from models.models import Base, UserTable
 
 Base.metadata.create_all(bind=engine)
 

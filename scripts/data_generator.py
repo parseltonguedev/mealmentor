@@ -1,8 +1,8 @@
 from faker import Faker
 from sqlalchemy.orm import Session
 
-from database import SessionLocal
-from models import UserTable
+from src.db.mealmentor_database import SessionLocal
+from src.models.models import UserTable
 
 # Create a Faker instance
 fake = Faker()

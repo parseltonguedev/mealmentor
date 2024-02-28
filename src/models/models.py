@@ -1,9 +1,10 @@
 from pydantic import BaseModel
 from sqlalchemy import TIMESTAMP, Column, Float, ForeignKey, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import text
 
-from database import Base
+Base = declarative_base()
 
 
 class UserTable(Base):
