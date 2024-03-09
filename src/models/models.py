@@ -1,13 +1,12 @@
 from pydantic import BaseModel
 from sqlalchemy import TIMESTAMP, Column, Float, ForeignKey, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import text
 
-Base = declarative_base()
+from db.mealmentor_database import Base
 
 
-class UserTable(Base):
+class UserTable(Base):  # type: ignore
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, unique=True, index=True)
@@ -33,7 +32,7 @@ class User(BaseModel):
     country: str
 
 
-class UserQuality(Base):
+class UserQuality(Base):  # type: ignore
     __tablename__ = "users_quality"
 
     id = Column(Integer, primary_key=True, unique=True, index=True)

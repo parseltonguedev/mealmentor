@@ -33,5 +33,3 @@ CREATE TABLE users_quality (
 
 -- Index
 CREATE INDEX idx_user_id ON users(user_id);
-
-
