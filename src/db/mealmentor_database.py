@@ -1,8 +1,11 @@
+import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = "sqlite:///mealmentor.db"
+db_absolute_path = os.environ.get("ABSOLUTE_DB_PATH")
+SQLALCHEMY_DATABASE_URL = f"sqlite:////{db_absolute_path}"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
